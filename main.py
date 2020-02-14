@@ -25,6 +25,10 @@ def change(event):
         w.config(text="@@@", bg='red')
 
 
+def save():
+    print(1)
+
+
 win = Tk()
 win.title("To Do List")
 
@@ -39,7 +43,7 @@ menuBar.add_cascade(label="File", menu=fMenu)
 fMenu.add_command(label='New File', accelerator='Ctrl + N')
 fMenu.add_command(label='Open', accelerator='Ctrl + O')
 fMenu.add_command(label='Save', accelerator='Ctrl + S')
-fMenu.add_command(label='Save As')
+fMenu.add_command(label='Save As', command=save)
 fMenu.add_separator()
 fMenu.add_command(label='Copy', accelerator='Ctrl + C')
 fMenu.add_command(label='Paste', accelerator='Ctrl + V')
